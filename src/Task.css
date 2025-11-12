@@ -1,0 +1,46 @@
+/* src/Task.css */
+.task-card {
+  padding: 14px 16px; /* थोड़ा ज्यादा पैडिंग */
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s ease;
+  font-size: 0.95rem;
+  border-left: 4px solid transparent; /* होवर इफेक्ट के लिए */
+}
+
+.task-card:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  border-left-color: #0079bf; /* होवर करने पर लेफ्ट साइड में ब्लू लाइन */
+}
+
+.task-card.is-dragging {
+  background-color: #e3f2fd; /* ड्रैग करते समय हल्का नीला रंग */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  transform: rotate(2deg); /* ड्रैग करते समय हल्का सा रोटेट इफेक्ट */
+}
+
+.delete-task-button {
+  background: transparent;
+  border: none;
+  color: #ff5252;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
+  padding: 4px 8px;
+  border-radius: 4px;
+  opacity: 0; /* डिफ़ॉल्ट रूप से छिपा हुआ */
+  transition: opacity 0.2s ease, background-color 0.2s ease;
+}
+
+.task-card:hover .delete-task-button {
+  opacity: 1; /* कार्ड पर होवर करने पर ही डिलीट बटन दिखेगा */
+}
+
+.delete-task-button:hover {
+  background-color: #ffebee; /* डिलीट बटन पर होवर करने पर हल्का लाल बैकग्राउंड */
+}

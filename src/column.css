@@ -1,0 +1,40 @@
+
+.column-container {
+  margin: 10px;
+  background-color: #ebecf0;
+  border-radius: 8px;
+  width: 300px; 
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+  min-height: 400px; 
+}
+
+.column-title {
+  padding: 16px 20px; 
+  margin: 0;
+  font-size: 1.2rem;
+  color: #172b4d;
+  font-weight: 700;
+  border-bottom: 1px solid #ccc;
+  background-color: #dcdfe3; 
+  border-radius: 8px 8px 0 0;
+}
+
+.task-count {
+  font-size: 0.9rem;
+  color: #666;
+  margin-left: 8px;
+}
+
+.task-list {
+  padding: 12px; 
+  transition: background-color 0.2s ease;
+  flex-grow: 1;
+  min-height: 100px;
+  border-radius: 0 0 8px 8px;
+}
+
+.dragging-over {
+  background-color: #e3f2fd; 
+}

@@ -1,0 +1,65 @@
+/* src/App.css */
+.app-container {
+  padding: 30px;
+  background-color: #0079bf; /* Trello-like blue background */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+}
+
+.board-title {
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 2.5rem; /* Larger title */
+  letter-spacing: 1px;
+}
+
+.add-task-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px; /* More space below form */
+  width: 100%;
+  max-width: 500px; /* Limit form width */
+}
+
+.task-input {
+  padding: 12px 18px; /* Slightly more padding */
+  font-size: 1rem;
+  border: 2px solid #ccc; /* Subtle border */
+  border-radius: 8px 0 0 8px; /* Rounded corners */
+  width: 100%;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.task-input:focus {
+  border-color: #38bdf8; /* Highlight on focus */
+}
+
+.add-task-button {
+  padding: 12px 25px; /* Slightly more padding */
+  font-size: 1rem;
+  background-color: #5aac44; /* Green for add */
+  color: white;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.add-task-button:hover {
+  background-color: #4c9e37; /* Darker green on hover */
+}
+
+.columns-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+  gap: 20px; /* Space between columns */
+  width: 100%;
+}
