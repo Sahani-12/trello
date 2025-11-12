@@ -1,6 +1,6 @@
-import React from 'react';
-import { Draggable } from '@hello-pangea/dnd';
-import './Task.css'; // नई CSS फाइल इंपोर्ट करें
+import React from "react";
+import { Draggable } from "@hello-pangea/dnd";
+import "./Task.css"; // नई CSS फाइल इंपोर्ट करें
 
 const Task = (props) => {
   return (
@@ -10,8 +10,12 @@ const Task = (props) => {
           ref={provided.innerRef}
           {...provided.draggableProps}
           {...provided.dragHandleProps}
-          className={`task-card ${snapshot.isDragging ? 'is-dragging' : ''}`} /* CSS क्लास लगाएं */
-          style={{ ...provided.draggableProps.style }} /* DnD लाइब्रेरी के स्टाइल्स को ओवरराइड न करें */
+          className={`task-card ${
+            snapshot.isDragging ? "is-dragging" : ""
+          }`} /* CSS क्लास लगाएं */
+          style={{
+            ...provided.draggableProps.style,
+          }} /* DnD लाइब्रेरी के स्टाइल्स को ओवरराइड न करें */
         >
           <span>{props.task.content}</span>
           <button
