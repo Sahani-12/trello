@@ -1,7 +1,7 @@
 import React from 'react';
 import { Droppable } from '@hello-pangea/dnd';
 import Task from './Task.jsx'; // .jsx एक्सटेंशन का ध्यान रखें
-import './Column.css'; // नई CSS फाइल इंपोर्ट करें
+import './column.css'; // नई CSS फाइल इंपोर्ट करें
 
 const Column = (props) => {
   return (
